@@ -11,7 +11,7 @@ jobs:
         node-version: [15.x]
 
     steps:
-      - uses: Tero23/aws-cdk@main
+      - uses: Tero23/s3-sync-action@main
       - run: npm install
       - run: npm run build
       - uses: arachnet@admin/aws-cdk-arachnet-s3
