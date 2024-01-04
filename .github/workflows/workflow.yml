@@ -30,4 +30,4 @@ jobs:
         run: aws configure set aws_access_key_id ${{ secrets.AWS_ACCESS_KEY_ID }} && aws configure set aws_secret_access_key ${{ secrets.AWS_SECRET_ACCESS_KEY }} && aws configure set region us-east-2
 
       - name: Deploy to AWS S3
-        run: aws s3 sync ./public/ s3://aws-cdk-arachnet-s3 --delete
+        run: aws s3 sync ./ s3://aws-cdk-arachnet-s3 --delete
